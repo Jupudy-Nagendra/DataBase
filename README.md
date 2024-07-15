@@ -18,15 +18,16 @@ MYSQL WorkBench
     grade VARCHAR(10) NOT NULL
     );
 
+
 **Step-2** Setup
 1. Download the main.py and database.py files from the MYSQL folder
 2. Keep the both files in a same folder
 3. Open in VS studio and select the desired folder (set path)
 4. run the python terminal
-5. initiate the fastapi (run)
-   Command :
-   uvicorn main:app --reload
-   or
+5. initiate the fastapi (run)  
+   Command :  
+   uvicorn main:app --reload  
+   or  
    fastapi dev main.py
 6. FASTAPI connection is established
 
@@ -70,6 +71,55 @@ Test the application
     curl -X 'DELETE' \
       'http://127.0.0.1:8000/students/1' \
       -H 'accept: application/json'
+
+
+## Implementing CRUD Operations with MongoDB and FastAPI  
+
+**Step-1**  
+Install MongoDB in your system  
+1. Open Command prompt
+2. Use commands below
+   mongosh (initilizing the mongodb)
+   show dbs (check what databases are available)
+   use school (create school database if not available else it will use school database)
+
+**Step-2**  setup
+1. Download the main.py and database.py files from the MYSQL folder
+2. Keep the both files in a same folder
+3. Open in VS studio and select the desired folder (set path)
+4. run the python terminal
+5. initiate the fastapi (run)  
+   Command :  
+   uvicorn main:app --reload  
+   or  
+   fastapi dev main.py
+6. FASTAPI connection is established
+
+**Step-3**  
+Test the application
+1. Open the postman application and use the below commands for operation
+2. Commands  
+   **Create**     
+   curl -X POST "http://localhost:8000/students/" -H "Content-Type: application/json" -d '{"name": "Mukesh", "age": 20, "grade": "A"}'
+
+   **get all**  
+   curl -X GET http://localhost:8000/students/
+   
+   **get by student id**    
+   curl -X GET http://localhost:8000/students/6692885566301ae0123b0d7b
+
+   **update student id**     
+   curl -X PUT "http://localhost:8000/students/6692885566301ae0123b0d7b" -H "Content-Type: application/json" -d '{"name": "nagendra", "age": 21, "grade": "B"}'  
+   or  
+   curl -X PUT "http://localhost:8000/students/669272b27c418869ffc4e49c" \  
+   -H "Content-Type: application/json" \  
+   -d '{"name": "nagendra", "age": 21, "grade": "B"}'  
+
+   **Delete student**     
+   curl -X DELETE http://localhost:8000/students/6692885566301ae0123b0d7b
+
+
+
 
 
 
