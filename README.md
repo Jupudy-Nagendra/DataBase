@@ -84,7 +84,7 @@ Install MongoDB in your system
    use school (create school database if not available else it will use school database)
 
 **Step-2**  setup
-1. Download the main.py and database.py files from the MYSQL folder
+1. Download the main.py and database.py files from the MongoDB folder
 2. Keep the both files in a same folder
 3. Open in VS studio and select the desired folder (set path)
 4. run the python terminal
