@@ -33,7 +33,7 @@ MYSQL WorkBench
 **Step-3**
 Test the application
 1. Open the postman application and use the below commands for operation
-2. Commands
+2. Commands  
    **Get Command**
     curl -X 'GET' \
       'http://127.0.0.1:8000/students/' \
