@@ -76,12 +76,12 @@ Test the application
 ## Implementing CRUD Operations with MongoDB and FastAPI  
 
 **Step-1**  
-Install MongoDB in your system  
+Install MongoDB in your system and follow below steps  
 1. Open Command prompt
-2. Use commands below
-   mongosh (initilizing the mongodb)
-   show dbs (check what databases are available)
-   use school (create school database if not available else it will use school database)
+2. Use commands below    
+   mongosh (initilizing the mongodb)  
+   show dbs (check what databases are available)  
+   use school (create school database if not available else it will use school database)   
 
 **Step-2**  setup
 1. Download the main.py and database.py files from the MongoDB folder
