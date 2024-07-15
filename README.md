@@ -18,7 +18,7 @@ MYSQL WorkBench
     grade VARCHAR(10) NOT NULL
     );
 
-**Step-2**
+**Step-2** Setup
 1. Download the main.py and database.py files from the MYSQL folder
 2. Keep the both files in a same folder
 3. Open in VS studio and select the desired folder (set path)
@@ -34,12 +34,12 @@ MYSQL WorkBench
 Test the application
 1. Open the postman application and use the below commands for operation
 2. Commands  
-   **Get Command**
+   **Get Command**  
     curl -X 'GET' \
       'http://127.0.0.1:8000/students/' \
       -H 'accept: application/json'
 
-    **Create an entry**
+    **Create an entry**  
     curl -X 'POST' \
       'http://127.0.0.1:8000/students/' \
       -H 'accept: application/json' \
@@ -50,12 +50,12 @@ Test the application
       "grade": "string"
     }'
     
-    **Get by unique id**
+    **Get by unique id**  
     curl -X 'GET' \
       'http://127.0.0.1:8000/students/1' \
       -H 'accept: application/json'
     
-    **Update**
+    **Update**  
     curl -X 'PUT' \
       'http://127.0.0.1:8000/students/1' \
       -H 'accept: application/json' \
@@ -66,7 +66,7 @@ Test the application
       "grade": "string"
     }'
     
-    **Delete**
+    **Delete**  
     curl -X 'DELETE' \
       'http://127.0.0.1:8000/students/1' \
       -H 'accept: application/json'
