@@ -119,6 +119,10 @@ Test the application
    curl -X DELETE http://localhost:8000/students/6692885566301ae0123b0d7b
 
 
+# Implementing CRUD Operations with Elastic Search and FastAPI
+   
+See the read me file in elastic search folder
+
 
 
 
